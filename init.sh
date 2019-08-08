@@ -28,9 +28,9 @@ cd ../../
 cd /content/nckh-cntn17/pytorch-retinanet/lib
 bash build.sh
 cd ../
-wget http://images.cocodataset.org/zips/train2014.zip
-wget http://images.cocodataset.org/annotations/annotations_trainval2014.zip
+wget http://images.cocodataset.org/zips/train2017.zip
+wget http://images.cocodataset.org/annotations/annotations_trainval2017.zip
 mkdir coco
 mkdir images 
-unzip train2014.zip -d coco/images/
-unzip annotations_trainval2014.zip -d coco/
+unzip train2017.zip -d coco/images/
+unzip annotations_trainval2017.zip -d coco/
