@@ -1,3 +1,13 @@
+apt install vim
+
+sudo apt-get --purge remove cuda-10.0
+wget https://developer.nvidia.com/compute/cuda/8.0/Prod2/local_installers/cuda-repo-ubuntu1604-8-0-local-ga2_8.0.61-1_amd64-deb
+dpkg -i cuda-repo-ubuntu1604-8-0-local-ga2_8.0.61-1_amd64-deb
+apt-get update
+apt-get install cuda-8.0
+export PATH=/usr/local/nvidia/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/tools/node/bin:/tools/google-cloud-sdk/bin:/opt/bin:/usr/local/cuda-8.0/bin
+export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64:/usr/lib64-nvidia/
+
 git clone https://gitlab.com/dtle/nckh-cntn17
 pip install cffi
 pip install pandas
